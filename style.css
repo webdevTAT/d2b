@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: rgb(220, 220, 220);
+}
+
+#container{
+    height: 500px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.179);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#result{
+    height: 5rem;
+    width: max-content;
+    padding: .4rem;
+    
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 3rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+/* #result:hover{
+    background-color: rgb(231, 231, 231);
+} */
+#label{
+
+    background-color: blueviolet;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+#dec{
+    font-size: 1.5rem;
+    background-color: blueviolet;
+    color: white;
+    padding: 1rem;
+    border-radius: .5rem 0rem 0rem .5rem;
+    display: none;
+}
+#inputNum{
+    outline: none;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    padding: 1rem;
+}
+#submited{
+    font-size: 1.5rem;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    padding: 1rem;
+    border-radius: 0rem .5rem .5rem 0rem;
+    transition: box-shadow ease .2s;
+    display: none;
+}
+#submited:hover{
+    box-shadow: inset 250px 0px 10px rgb(81, 15, 205);
+}
+code{
+    opacity: 50%;
+    margin-top: 3rem
+}
+.decimalInput{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media (max-width:800px) {
+   #container{
+       width: 90%;
+    }
+    .decimalInput{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #label{
+        width: 320px;
+        text-align: center;
+    }
+    #dec{
+        display: none;
+    }
+    #result{
+        width: 320px;
+    }
+    #submited{
+        margin-top: .4rem;
+        width: 320px;
+        border-radius: .5rem .5rem .5rem .5rem;
+    }
+}
+@media (max-width:380px) {
+    #label{
+        font-size: 1.4rem;
+        width: max-content;
+    }
+    #submited{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+    }
+    #inputNum{
+        width: 200px;
+    }
+}
